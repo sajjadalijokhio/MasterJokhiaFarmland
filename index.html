@@ -1,9 +1,168 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Test</title>
-    </head>
-    <body>
-        <h1>Testing Site</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Jokhia Farmland</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">🌾 Master Jokhia Farmland</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#crops">Crops</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section (Static) -->
+<section id="home" class="section" style="margin-top: 0px;">
+    <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="slider-image-wrapper">
+                    <img src="img/farm1.jpg" class="d-block w-100 slider-image" alt="Farm Image 1">
+                    <div class="carousel-caption">
+                        <h2>Welcome to Master Jokhia Farmland 🌾</h2>
+                        <p>Experience sustainable farming and top-quality crops.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="slider-image-wrapper">
+                    <img src="img/farm2.jpg" class="d-block w-100 slider-image" alt="Farm Image 2">
+                    <div class="carousel-caption">
+                        <h2>Fresh Produce 🍅</h2>
+                        <p>Tomatoes, rice, and chillies grown with love.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="slider-image-wrapper">
+                    <img src="img/farm3.jpg" class="d-block w-100 slider-image" alt="Farm Image 3">
+                    <div class="carousel-caption">
+                        <h2>Eco-Friendly Farming 🌱</h2>
+                        <p>Preserving nature while feeding the future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+
+<section id="about" class="container my-5 section">
+    <h2 class="text-center">About Us 🌾</h2>
+    <hr>
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <p>
+                Welcome to <strong>Master Jokhia Farmland</strong>, 🌟 a serene paradise in Thatta Sindh, Pakistan, where we take pride in cultivating top-quality crops 🌿.
+                Our farm specializes in producing staples such as rice 🍚, tomatoes 🍅, and chillies 🌶️, using sustainable farming practices.
+                We believe in nurturing the land and preserving nature's balance 🌍. Whether you're looking for the freshest produce or
+                a model of eco-friendly farming, our farmland has it all! 🛤️
+            </p>
+        </div>
+        <div class="col-md-6">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/example_video_id"
+                    title="YouTube video" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<section id="crops" class="container my-5 section">
+    <h2 class="text-center">Our Crops 🌱</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-4 text-center crop-container">
+            <img src="img/rice.jpg" class="img-fluid crop-image" alt="Rice">
+            <h4>Rice 🍚</h4>
+            <p>
+                Our farm-grown rice is a staple crop 🌾 cherished for its superior quality, rich flavor, and nutritional value.
+                Perfect for your favorite dishes, it's grown with love and care under ideal conditions. ❤️
+            </p>
+        </div>
+        <div class="col-md-4 text-center crop-container">
+            <img src="img/tomatoes.jpg" class="img-fluid crop-image" alt="Tomatoes">
+            <h4>Tomatoes 🍅</h4>
+            <p>
+                Vibrant, juicy tomatoes grown on our farmland are packed with natural sweetness and nutrients. 🥗
+                They are perfect for adding a fresh, healthy touch to your meals. 🌟
+            </p>
+        </div>
+        <div class="col-md-4 text-center crop-container">
+            <img src="img/chillies.jpg" class="img-fluid crop-image" alt="Chillies">
+            <h4>Chillies 🌶️</h4>
+            <p>
+                Add some spice to your life with our fiery red and green chillies. 🔥 Grown with precision,
+                they bring a bold kick to your culinary creations while retaining their natural goodness. 🌶️✨
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="container my-5 section">
+    <h2 class="text-center">Contact Us 📬</h2>
+    <hr>
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name 🧑‍💼</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email 📧</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message 📝</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send 🚀</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.3066882051958!2d67.8070357!3d24.7406273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394ce1b372d429a5%3A0x534048e7cb9e95d3!2sMaster%20Jokhia%20Farmland!5e1!3m2!1sen!2s!4v1737224272892!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+        location.reload(); // Reload the page
+    });
+</script>
+
+<!-- Footer Section -->
+<footer class="bg-primary text-center text-white py-3">
+    <p>&copy; 2025 Master Jokhia Farmland | Follow us on
+        <a href="https://www.facebook.com/masterjokhiafarmland" class="text-white">Facebook</a>
+    </p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
